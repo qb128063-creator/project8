@@ -1075,12 +1075,12 @@ textarea.form-control {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.8rem;
-    height: calc(18px);
-    overflow: hidden;
+    /* allow titles to wrap to multiple lines instead of forcing a single-line ellipsis */
+    height: auto;
+    overflow: visible;
     display: block;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
+    -webkit-box-orient: unset;
+    -webkit-line-clamp: unset;
 }
 
 .product__price {
