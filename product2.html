@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm - Serum Vitamin C</title>
+    <!-- Font roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Icon fontanwesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous" />
+    <!-- Reset css & grid sytem -->
+    <link rel="stylesheet" href="./assets/css/library.css">
+    <!-- Owl Slider css -->
+    <link rel="stylesheet" href="assets/owlCarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlCarousel/assets/owl.theme.default.min.css">
+    <!-- Layout -->
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <!-- product -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/product.css">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl caroucel Js-->
+    <script src="assets/owlCarousel/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+</head>
+
+<body>
+    <!-- Copied from product.html and updated product details -->
+    <!-- Header/menu/footer and scripts are identical to product.html -->
+    <!-- For brevity, content is the same structure; only product-specific fields changed -->
+    <div class="header scrolling" id="myHeader">
+        <div class="grid wide">
+            <div class="header__top">
+                <div class="navbar-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="index.html" class="header__logo">
+                    <img src="./assets/logo.png" alt="">
+                </a>
+                <div class="header__search">
+                    <div class="header__search-wrap">
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm">
+                        <a class="header__search-icon" href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__account">
+                    <a href="#my-Login" class="header__account-login">Đăng Nhập</a>
+                    <a href="#my-Register" class="header__account-register">Đăng Kí</a>
+                </div>
+                <div class="header__cart have" href="#">
+                    <i class="fas fa-shopping-basket"></i>
+                    <div class="header__cart-amount">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item index"><a href="index.html" class="header__nav-link">Trang chủ</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Sản Phẩm</a></li>
+                <li class="header__nav-item"><a href="news.html" class="header__nav-link">Tin Tức</a></li>
+                <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="grid wide">
+            <div class="productInfo">
+                <div class="row">
+                    <div class="col l-5 m-12 s-12">
+                        <div class="owl-carousel owl-theme" id="sync1">
+                            <a href="#" class="product">
+                                <div class="product__avt" style="background-image: url(assets/img/product/product2.jpg)"></div>
+                            </a>
+                            <a href="#" class="product">
+                                <div class="product__avt" style="background-image: url(assets/img/product/product3.jpg)"></div>
+                            </a>
+                            <a href="#" class="product">
+                                <div class="product__avt" style="background-image: url(assets/img/product/product4.jpg)"></div>
+                            </a>
+                        </div>
+                        <div class="owl-carousel owl-theme" id="sync2">
+                            <a href="#" class="product"><div class="product__avt" style="background-image: url(assets/img/product/product2.jpg)"></div></a>
+                            <a href="#" class="product"><div class="product__avt" style="background-image: url(assets/img/product/product3.jpg)"></div></a>
+                            <a href="#" class="product"><div class="product__avt" style="background-image: url(assets/img/product/product4.jpg)"></div></a>
+                        </div>
+                    </div>
+                    <div class="col l-7 m-12s s-12 pl">
+                        <div class="main__breadcrumb">
+                            <div class="breadcrumb__item"><a href="#" class="breadcrumb__link">Trang chủ</a></div>
+                            <div class="breadcrumb__item"><a href="#" class="breadcrumb__link">Cửa hàng</a></div>
+                            <div class="breadcrumb__item"><a href="#" class="breadcrumb__link">Serum</a></div>
+                        </div>
+                        <h3 class="productInfo__name">Serum Vitamin C Some By Mi</h3>
+                        <div class="productInfo__price">320.000 <span class="priceInfo__unit">đ</span></div>
+                        <div class="productInfo__description">Serum Vitamin C tập trung vào làm sáng da, giảm thâm và cải thiện kết cấu da. Thành phần chính là vitamin C ổn định giúp đều màu da và chống oxy hóa.</div>
+
+                        <div class="productInfo__addToCart">
+                            <div class="buttons_added">
+                                <input class="minus is-form" type="button" value="-" onclick="minusProduct()">
+                                <input aria-label="quantity" class="input-qty" max="10" min="1" type="number" value="1">
+                                <input class="plus is-form" type="button" value="+" onclick="plusProduct()">
+                            </div>
+                            <div class=" btn btn--default orange ">Thêm vào giỏ</div>
+                        </div>
+                        <div class="productIndfo__category ">
+                            <p class="productIndfo__category-text">Danh mục : <a href="#" class="productIndfo__category-link">Serum</a></p>
+                            <p class="productIndfo__category-text">Hãng : <a href="#" class="productIndfo__category-link">Some By Mi</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-3 m-6 s-12">
+                    <h3 class="footer__title">Menu</h3>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <span class="footer__text"> &copy Bản quyền thuộc về <a class="footer__link" href="#"> Admin</a></span>
+        </div>
+    </div>
+
+    <script src="./assets/js/commonscript.js"></script>
+</body>
+
+</html>
